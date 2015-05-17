@@ -1,7 +1,8 @@
 # DiModular
+
 Small and versatile framework for developing scalable JavaScript applications.
 DiModular is inspired by the [Scalable JavaScript Application Architecture](http://www.youtube.com/watch?v=vXjVFPosQHw)
-presented by by Nicholas Zakas, also known as the Core-Module-Sanbox pattern.
+presented by by Nicholas Zakas, also known as the Core-Module-Sandbox pattern.
 However, instead of a "sandbox", a dependency injection container is used for
 handling dependencies and extending core functionality.
 
