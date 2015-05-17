@@ -75,7 +75,7 @@ Starts all non-running modules. Each started module's `init` method is called.
 If provided, optional arguments are passed to each `init` method.
 
 ### diModular.stop(name)
-Stops named module. The module's `destroy method is called.
+Stops named module. The module's `destroy` method is called.
 
 ### diModular.stopAll()
 Stops all running modules. Each stoped module's `destroy` method is called.
