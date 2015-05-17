@@ -1,0 +1,47 @@
+{
+  "name": "smargasboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --check-leaks --reporter spec --bail",
+    "test-cov": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claudijo/di-modular"
+  },
+  "keywords": [
+    "di",
+    "dependency",
+    "injection",
+    "container",
+    "module",
+    "component",
+    "core",
+    "sandbox",
+    "framework",
+    "scalable"
+  ],
+  "author": "Claudijo Borovic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claudijo/di-modular/issues"
+  },
+  "homepage": "https://github.com/claudijo/di-modular",
+  "dependencies": {
+    "di-container": "^1.0.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.14",
+    "mocha": "^2.2.5"
+  },
+  "files": [
+    "LICENSE",
+    "index.js"
+  ],
+  "directories": {
+    "test": "./test",
+    "examples": "./examples"
+  }
+}
