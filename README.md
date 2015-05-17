@@ -19,7 +19,9 @@ diModular.register('$someDependency', 'someValue');
 ```
 
 ### diModular.factory(dependency, factory)
-Registers factory as named dependency.
+Registers factory as named dependency. Factories can lists registered
+dependencies in their argument list, which will be injected when the factory
+is called.
 
 ```js
 diModular.factory('$someDependency', function($otherDependency) {
