@@ -10,10 +10,6 @@ a dependency injection container is used.
 `$ npm install di-modular`
 
 ### Api
-DiModular inherits from [di-container API]
-(https://github.com/claudijo/di-container), which provides an alternative
-syntax for registering factories that is is more resilient to code minifcation
-and name mangling.
 
 #### diModular.register(dependency, value)
 Registers value as named dependency.
