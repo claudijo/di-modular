@@ -1,7 +1,7 @@
 {
   "name": "di-modular",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Small and versatile framework for developing scalable JavaScript applications.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --check-leaks --reporter spec --bail",
