@@ -46,7 +46,7 @@ diModular.factory('$someDependency', ['$otherDependency', function(a) {
 Access named dependency.
 
 #### diModular.module(name, moduleFactory)
-Registers a named moduleFactory. Module factories can lists registered
+Registers a named module factory. Module factories can lists registered
 dependencies in their argument list, which will be injected when the module is
 instantiated. Modules should implement an `init` method and a `destroy` method,
 which will be called as the module is started and stopped respectively.
