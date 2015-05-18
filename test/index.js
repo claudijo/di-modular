@@ -9,8 +9,8 @@ describe('DiModular', function() {
   });
 
   it('should be possible to instantiate without using the new keyboard', function() {
-    var newSb = DiModular();
-    assert(newSb instanceof DiModular);
+    var newModular = DiModular();
+    assert(newModular instanceof DiModular);
   });
 
   it('should return registered dependency when calling get', function() {
