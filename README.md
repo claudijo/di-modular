@@ -32,13 +32,12 @@ diModular.factory('$someDependency', function($otherDependency) {
 });
 ```
 
-An alternative syntax is available that is more resilient to code minifcation
-and name mangling, as follows:
+Alternative syntax that is more resilient to code minifcation and name mangling:
 
 ```js
-diModular.factory('$someDependency', ['$otherDependency', function(a) {
+diModular.factory('$someDependency', ['$otherDependency', function($otherDependency) {
   return {
-    someValue: a
+    someValue: $otherDependency
   };
 }]);
 ```
@@ -65,6 +64,23 @@ diModular.module('someModule', function($someDependency) {
 
   }
 });
+```
+
+Alternative syntax that is more resilient to code minification and name mangling:
+
+```js
+diModular.module('someModule', ['$someDependency', function($someDependency) {
+  return {
+    init: function() {
+      // Use $someDependency
+    },
+
+    destroy: function() {
+      // ...
+    }
+
+  }
+}]);
 ```
 
 #### diModular.start(name[, arg1][, arg2][, ...])
