@@ -1,5 +1,5 @@
 var DiContainer = require('di-container');
-var util = require('util');
+var inherits = require('inherits');
 
 var DiModular = function() {
   if (!(this instanceof DiModular)) {
@@ -11,7 +11,7 @@ var DiModular = function() {
   this._modules = {};
 };
 
-util.inherits(DiModular, DiContainer);
+inherits(DiModular, DiContainer);
 
 DiModular.prototype.module = function(name, factory) {
   this.factory(name, factory);
